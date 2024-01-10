@@ -1,0 +1,25 @@
+pipeline{
+	agent any
+	  stages{
+		stage('first stage'){
+				steps{
+					echo "fetching the files"
+					}
+					}
+		stage('Second stage'){
+				steps{
+					echo "Building process inciated"
+					}
+					}
+		stage('third stage'){
+				steps{
+					echo "Testing phase"
+					}
+					}
+		stage('final stage'){
+				steps{
+					echo "Building phase"
+					}
+					}
+			}
+	}
